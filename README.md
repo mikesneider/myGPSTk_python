@@ -6,7 +6,7 @@
 ```python
 set (HOME "/home/<-YOUR-PC-NAME-HERE->")
 ```
-For my case `whole procedure - Assumes that Machine name is **wallas**` and the home foldes absolute path is **/home/wallas/**
+For my case `whole procedure - Assumes that Machine name is **wallas**` and the home foldes absolute path is **/home/username/**
 
 ---
 
@@ -27,7 +27,7 @@ Esta versión ya esta modificada con los siguientes ajustes
 2.  modify file python/bindings/swig/CMakeLists.txt
 
    add the following lines at begin of file (use .so instead of .dylib if on linux)
-
+after line 10
 >>```bash
 set (HOME "/home/wallas")
 SET(PYTHON_INCLUDE_PATH "${HOME}/anaconda3/envs/py27/include/python2.7/")
@@ -42,7 +42,7 @@ SET(PYTHON_LIBRARY "${HOME}/anaconda3/envs/py27/lib/libpython2.7.so")
 sudo apt-get install gcc g++ cmake 
 ```
 
-#### Build && Compiling Swig 3.0.10 from sources
+#### Build && Compiling Swig 3.0.10 or higher from sources
 
 >- Dependences
 ```bash
@@ -130,8 +130,8 @@ bash script_gpstk.sh -bc -p -l ~/anaconda3/envs/py27/lib/python2.7/site-packages
  make sure the following variables are defined in your bashrc (BUT NOT AT COMPILE TIME), add this lines to `nano  ~/.bashrc`
 
 >```bash
-export LD_LIBRARY_PATH=/home/wallas/gpstk-2.5/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/home/wallas/anaconda3/envs/py27/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/username/gpstk-2.5/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/username/anaconda3/envs/py27/lib:$LD_LIBRARY_PATH
 >```
 
 ###  Install python bindigns
@@ -160,9 +160,9 @@ cp ${HOME}/gpstk-2.5/lib/libgpstk.so ${HOME}/anaconda3/envs/py27/lib
 
 ### Run example codes
 
-The compilation procedure creates a folder `build*`, in my case `build-wallas-pc-`
+The compilation procedure creates a folder `build*`, in my case `build-username-pc-`
 >```bash
-cd build-wallas-pc-/swig/install_package/examples
+cd build-username-pc-/swig/install_package/examples
 python example1.py 
 ```
 
