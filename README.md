@@ -1,5 +1,5 @@
 ## Version 2.5 (gpstk-2.5.src+Modif)
-## Download de Sorcecode of GPSTK [HERE](https://drive.google.com/open?id=0B5Ax3e3RmvxuLW9vU1dxUElBazQ)
+#### Download de Sorcecode of GPSTK [HERE](https://drive.google.com/open?id=0B5Ax3e3RmvxuLW9vU1dxUElBazQ)
 
 **IMPORTANT**
 
@@ -30,7 +30,7 @@ Esta versión ya esta modificada con los siguientes ajustes
    add the following lines at begin of file (use .so instead of .dylib if on linux)
 after line 10
 >>```bash
-set (HOME "/home/wallas")
+set (HOME "/home/username")
 SET(PYTHON_INCLUDE_PATH "${HOME}/anaconda3/envs/py27/include/python2.7/")
 SET(PYTHON_LIBRARIES "${HOME}/anaconda3/envs/py27/lib/libpython2.7.so")
 SET(PYTHON_LIBRARY "${HOME}/anaconda3/envs/py27/lib/libpython2.7.so")
