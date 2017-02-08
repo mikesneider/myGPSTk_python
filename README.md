@@ -234,3 +234,14 @@ the results of code
 Earliest time found: 06/10/2004 00:00:00 GPS
 Latest time found:   06/10/2004 00:59:30 GPS
 ```
+
+#### Problems with Pandas?
+If later that install pandas not find the library...
+the way to install the library is:
+>```bash
+python -m pip install pandas
+```
+and verify with:
+>```
+conda list
+```
