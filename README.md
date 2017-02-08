@@ -61,7 +61,7 @@ pip install nvector
 ```
 
    in section 4 just after toGloEphemeris
->>``` C
+>``` C
    %rename (toGPSEphemeris) *::operator GPSEphemeris() const;
 ```
 
