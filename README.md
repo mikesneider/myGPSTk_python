@@ -12,6 +12,46 @@ For my case `whole procedure - Assumes that Machine name is **wallas**` and the 
 ---
 
 Esta versión ya esta modificada con los siguientes ajustes
+### Install Anaconda 
+
+>you can obtain a Anaconda installer for your SO from [HERE](https://www.continuum.io/downloads)
+or you can:
+
+>#### Anaconda 3.5
+ for 64bits
+>>```bash
+wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+bash Anaconda3-4.2.0-Linux-x86_64.sh 
+```
+
+>for 32bits
+>>```bash
+wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86.sh
+bash Anaconda3-4.2.0-Linux-x86.sh 
+```
+
+>#### Anaconda 2.7
+ for 64bits
+>>```bash
+wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
+bash Anaconda2-4.2.0-Linux-x86_64.sh 
+```
+
+>for 32bits
+>>```bash
+wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86.sh
+bash Anaconda2-4.2.0-Linux-x86.sh 
+```
+
+###   Create a anaconda enviroment 
+It's with the propose that you have a isolated GPSTk development enviroment
+
+>```bash
+conda create -n py27 python=2.7 notebook jupyter numpy scipy matplotlib ipykernel sympy scikit-image
+source activate py27
+pip install nvector
+>```
+
 
 1. modify file python/bindings/swig/gpstk.i
 
@@ -71,45 +111,6 @@ sudo apt-get install doxygen
 ```
 
 
-### Install Anaconda 
-
->you can obtain a Anaconda installer for your SO from [HERE](https://www.continuum.io/downloads)
-or you can:
-
->#### Anaconda 3.5
- for 64bits
->>```bash
-wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
-bash Anaconda3-4.2.0-Linux-x86_64.sh 
-```
-
->for 32bits
->>```bash
-wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86.sh
-bash Anaconda3-4.2.0-Linux-x86.sh 
-```
-
->#### Anaconda 2.7
- for 64bits
->>```bash
-wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
-bash Anaconda2-4.2.0-Linux-x86_64.sh 
-```
-
->for 32bits
->>```bash
-wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86.sh
-bash Anaconda2-4.2.0-Linux-x86.sh 
-```
-
-###   Create a anaconda enviroment 
-It's with the propose that you have a isolated GPSTk development enviroment
-
->```bash
-conda create -n py27 python=2.7 notebook jupyter numpy scipy matplotlib ipykernel sympy scikit-image
-source activate py27
-pip install nvector
->```
 
 
 ###   run compile and install script:
