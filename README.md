@@ -241,7 +241,9 @@ the way to install the library is:
 >```bash
 python -m pip install pandas
 ```
+
 and verify with:
+
 >```
 conda list
 ```
